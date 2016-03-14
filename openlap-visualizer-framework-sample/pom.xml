@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
  
   <groupId>de.rwthaachen.openlap</groupId>
-  <artifactId>openlap-visualizer-framework-sample</artifactId>
+  <artifactId>openlap-visualizer-framework-sample-google-chart</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
  
@@ -29,7 +29,7 @@
     <dependency>
 	    <groupId>com.github.OpenLearningAnalyticsPlatform</groupId>
 	    <artifactId>OpenLAP-Visualizer-Framework</artifactId>
-	    <version>v1.1</version>
+	    <version>v1.1-beta</version>
 	</dependency>
   </dependencies>
    <build>
@@ -67,7 +67,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <finalName>openlap-visualizer-framework-sample-1.0</finalName>
+                    <finalName>openlap-visualizer-framework-sample-google-chart-1.0</finalName>
                 </configuration>
             </plugin>-->
         </plugins>

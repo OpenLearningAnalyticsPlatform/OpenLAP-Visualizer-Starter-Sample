@@ -9,15 +9,14 @@ import java.util.ArrayList;
 
 public class PieChartDataTransformer implements DataTransformer {
 
-    @Override
-    public TransformedData<?> transformData(OLAPDataSet olapDataSet) {
+     public TransformedData<?> transformData(OLAPDataSet olapDataSet) {
         TransformedGooglePieChartData transformedGooglePieChartData = new TransformedGooglePieChartData();
         olapDataSet.getColumnsAsList(true).forEach(olapDataColumn -> {
             //in this Data transformer y axis contains only INTEGERS
             if (olapDataColumn.getConfigurationData().getType().equals(OLAPColumnDataType.INTEGER)) {
                 ArrayList<String> frequencies = new ArrayList<>();
                 for (Object data : olapDataColumn.getData()) {
-                  frequencies.add(data.toString());
+                    frequencies.add(data.toString());
                 }
                 transformedGooglePieChartData.setFrequencies(frequencies);
             } else {
